@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module configVersion="1.2">
+
+	<!-- Base Module Properties -->
+	<id>${project.parent.artifactId}</id>
+	<name>${project.parent.name}</name>
+	<version>${project.parent.version}</version>
+	<package>org.openmrs.module.postbahmni</package>
+	<author>Mekom Solutions</author>
+	<description>
+			${project.parent.description}
+	</description>
+
+	<activator>org.openmrs.module.postbahmni.PostBahmniActivator</activator>
+
+	<require_version>2.1.1</require_version>
+
+	<aware_of_modules>
+		<aware_of_module>org.bahmni.module.bahmnicore</aware_of_module>
+	</aware_of_modules>
+
+	<messages>
+		<lang>en</lang>
+		<file>messages.properties</file>
+	</messages>
+
+</module>

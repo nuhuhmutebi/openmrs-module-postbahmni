@@ -7,24 +7,7 @@
                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
 
 	<!-- Concepts -->
-	<changeSet id="postbahmni-2021-03-12-19-43" author="rbuisson">
-		<comment>
-			Set concept 'Yes' UUID
-		</comment>
-		<update tableName="concept">
-			<column name="uuid" value="ee614b97-bd12-4684-8e66-eb432191315e"/>
-			<where>concept_id='1'</where>
-		</update>
-	</changeSet>
-	<changeSet id="postbahmni-2021-03-12-19-50" author="rbuisson">
-		<comment>
-			Set concept 'No' UUID
-		</comment>
-		<update tableName="concept">
-			<column name="uuid" value="a5cc579d-f388-4067-8a95-ad932114c31f"/>
-			<where>concept_id='2'</where>
-		</update>
-	</changeSet>
+	<include file="concepts.xml"/>
 
 	<!-- Encounter Types -->
 	<changeSet id="postbahmni-2021-03-12-19-51" author="rbuisson">
@@ -137,6 +120,44 @@
 		<update tableName="patient_identifier_type">
 			<column name="uuid" value="cb013d56-d1e0-4a1f-8d6e-652b35ec191d"/>
 			<where>name='Patient Identifier'</where>
+		</update>
+	</changeSet>
+
+	<!-- Order Types -->
+	<changeSet id="postbahmni-2021-03-25-19-01" author="reagan-meant">
+		<comment>
+			Set order type 'Radiology Order' UUID
+		</comment>
+		<update tableName="order_type">
+			<column name="uuid" value="5338a5b1-2cbc-4081-9a9b-9e479e2acaad"/>
+			<where>name='Radiology Order'</where>
+		</update>
+	</changeSet>
+	<changeSet id="postbahmni-2021-03-25-20-01" author="reagan-meant">
+		<comment>
+			Set order type 'Drug Order' UUID
+		</comment>
+		<update tableName="order_type">
+			<column name="uuid" value="16bb6bcf-2e81-4ba5-8583-ff4913201a72"/>
+			<where>name='Drug Order'</where>
+		</update>
+	</changeSet>
+	<changeSet id="postbahmni-2021-03-25-21-01" author="reagan-meant">
+		<comment>
+			Set order type 'Lab Order' UUID
+		</comment>
+		<update tableName="order_type">
+			<column name="uuid" value="f8ae333e-9d1a-423e-a6a8-c3a0687ebcf2"/>
+			<where>name='Lab Order'</where>
+		</update>
+	</changeSet>
+	<changeSet id="postbahmni-2021-03-25-21-17" author="reagan-meant">
+		<comment>
+			Set order type 'Test Order' UUID
+		</comment>
+		<update tableName="order_type">
+			<column name="uuid" value="52a447d3-a64a-11e3-9aeb-50e549534c5e"/>
+			<where>name='Test Order'</where>
 		</update>
 	</changeSet>
 </databaseChangeLog>

@@ -9,6 +9,9 @@
 	<!-- Concepts -->
 	<include file="concepts.xml"/>
 
+	<!-- OpenELIS concepts -->
+	<include file="labs.xml"/>
+
 	<!-- Encounter Types -->
 	<changeSet id="postbahmni-2021-03-12-19-51" author="rbuisson">
 		<comment>

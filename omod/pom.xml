@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.openmrs.module</groupId>
 		<artifactId>postbahmni</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>1.1.0</version>
 	</parent>
 
 	<artifactId>postbahmni-omod</artifactId>
@@ -13,15 +13,15 @@
 	<description>Omod submodule for Post Bahmni</description>
 
 	<dependencies>
-        <dependency>
-            <groupId>org.openmrs.module</groupId>
-            <artifactId>postbahmni-api</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>postbahmni-api</artifactId>
+      <version>1.1.0</version>
+    </dependency>
 		<dependency>
 			<groupId>org.openmrs.web</groupId>
 			<artifactId>openmrs-web</artifactId>
-            <scope>provided</scope>
+        <scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.openmrs.web</groupId>
